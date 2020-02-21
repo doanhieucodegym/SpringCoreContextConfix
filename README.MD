@@ -1,17 +1,24 @@
 ## Cấu hình Spring core ,context sử dụng XML
-I.** Tools và công nghệ sử dụng **
+`````I.** Tools và công nghệ sử dụng **`
 *Spring context 5.2.0 Release
 * JDk 1.8 or later 
 * Maven 3.6.2
 * IDE Inteliij any version
-II. ** Bước triển khai **
-1.Tạo Maven project application 
-2.Tạo packages cần thiết trong /src/main/java
-3.Tạo class trong gói tương ứng 
-4.Tạo file xml cấu hình trong /resource
-5.Run project trên Intellij 
+
+`II. ** Bước triển khai **`
+
+`1.Tạo Maven project application `
+
+`2.Tạo packages cần thiết trong /src/main/java`
+
+`3.Tạo class trong gói tương ứng `
+
+```4.Tạo file xml cấu hình trong /resource``
+
+``5.Run project trên Intellij ```
+```
 III. ** Chi tiết
-1.Tạo Maven project application:
+       1.Tạo Maven project application:
         * New Project > Maven(Project SDK chắc chắn hiện version java )>Next
         * Điền GroupId, ví dụ: demo.springcore
         	* Điền ArtifactId, ví dụ: demo.config.xml > Next
@@ -36,7 +43,7 @@ III. ** Chi tiết
             * phần này ta cấu cấu hình theo xml, ta nên đặt tên như sau > **applicationContext.xml**
         5. Run project trên Intellij
             * AppRunner.java > chọn [green >] cạnh trái main() > Run 'AppRunner.main()' or Vào AppRunner.java **ctrl + shift + f10**
-        
+        `
         6. Một số lỗi thường gặp
             * Sai tên clazz trỏ tới thuộc tính *"class"* trong thẻ **\<bean>**
             * tên field trong .java # với thuộc tính name trong thẻ **\<property>**
@@ -44,3 +51,4 @@ III. ** Chi tiết
             * ko tìm được file xml cấu hình
             * dùng context sai
             * etc..
+``````
